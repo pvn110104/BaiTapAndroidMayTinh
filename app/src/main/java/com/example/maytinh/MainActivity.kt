@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.buttonC).setOnClickListener { clearAll() }
         findViewById<Button>(R.id.buttonBS).setOnClickListener { backspace() }
         findViewById<Button>(R.id.buttonNeg).setOnClickListener { toggleNegative() }
+        findViewById<Button>(R.id.buttonCE).setOnClickListener { clearEntry() }
     }
 
     private fun toggleNegative() {
@@ -104,5 +105,10 @@ class MainActivity : AppCompatActivity() {
             currentNumber += view.text.toString()
             tvResult.text = currentNumber
         }
+    }
+
+    private fun clearEntry() {
+        currentNumber = ""
+        tvResult.text = "0"
     }
 }
