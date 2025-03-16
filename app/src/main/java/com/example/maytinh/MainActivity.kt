@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
 
         tvResult = findViewById(R.id.tvResult)
 
-        val buttons = listOf(R.id.button0, R.id.button1, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6, R.id.button7, R.id.button8, R.id.button9)
+        val buttons = listOf(R.id.button0, R.id.button1, R.id.button2, R.id.button3, R.id.button4,
+                            R.id.button5, R.id.button6, R.id.button7, R.id.button8, R.id.button9)
 
         for (id in buttons) {
             findViewById<Button>(id).setOnClickListener { numberClicked(it) }
